@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Splash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Splash&display=swap');
 
 body{
     height: 100vh;
     width: 100vw;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin: 0px;
 }
 .left-side{
@@ -14,10 +14,9 @@ body{
 }
 
 .image{
-    position: absolute;
-    z-index: -1;
+    position: relative;
     width:100%;
-
+    height: 100vh;
 }
 
 .logo{
@@ -38,4 +37,75 @@ body{
     align-items: center;
     justify-content: center;
     font-family: 'Splash', cursive;
+}
+
+.right-side{
+    width: 60%;
+    font-family: 'Bebas Neue', cursive;
+    background-color: rgb(234, 233, 252);
+    
+}
+
+.invitation-to-sign-up{
+    height: 25%;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    justify-content: center;
+    text-align: start;
+    font-size: 30px;
+}
+
+.sign-up-form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    box-shadow: 3px 4px 8px rgb(116, 115, 115);
+}
+#form-heading{
+    margin: 10px;
+    font-size: 20px;
+    padding: 30px;
+    padding-top: 0px;
+}
+label, input{
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+}
+
+input{
+  margin-inline: 40px;
+  text-align: start;
+}
+
+input:focus{
+    border-color: blue;
+}
+
+.inputs{
+    display: flex;
+    margin: 10px;
+    color: darkgray;
+}
+.submit-container{
+    margin: 40px;
+}
+
+#create-account-btn{
+    background-color: rgb(69, 106, 241);
+    height: 40px;
+    width: 200px;
+    border: none;
+    border-radius: 9px;
+    color: aliceblue;
+    font-weight:bold;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.5px;
+}
+
+#login{
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgb(30, 30, 211);
 }
