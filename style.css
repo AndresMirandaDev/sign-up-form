@@ -42,7 +42,7 @@ body{
 .right-side{
     width: 60%;
     font-family: 'Bebas Neue', cursive;
-    background-color: rgb(234, 233, 252);
+    background-color: rgb(204, 223, 222);
     
 }
 
@@ -61,29 +61,36 @@ body{
     width: 100%;
     flex-direction: column;
     box-shadow: 3px 4px 8px rgb(116, 115, 115);
+    background-color: white;
 }
 #form-heading{
     margin: 10px;
-    font-size: 20px;
+    font-size: 30px;
     padding: 30px;
     padding-top: 0px;
 }
-label, input{
+label{
     display: flex;
     flex-direction: column;
     text-align:center;
 }
 
 input{
+  display: flex;
+  flex-direction: column;
+  text-align:center;
   margin-inline: 40px;
   text-align: start;
+  border:solid 1px lightgray;
+  border-radius: 4px;
 }
 
 input:focus{
     border-color: blue;
+    box-shadow: 2px 2px 6px lightgrey;
 }
 
-.inputs{
+.input-container{
     display: flex;
     margin: 10px;
     color: darkgray;
@@ -103,9 +110,20 @@ input:focus{
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 0.5px;
 }
+#create-account-btn:hover{
+    transform: scale(1.3);
+    transition: 0.8s;
+    box-shadow: 4px 5px 7px rgb(164, 162, 162);
+    cursor: pointer;
+}
+
+#create-account-btn:active{
+    transform: scale(1.0);
+}
 
 #login{
     text-decoration: none;
     font-weight: bolder;
     color: rgb(30, 30, 211);
 }
+
